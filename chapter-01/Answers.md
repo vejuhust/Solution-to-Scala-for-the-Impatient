@@ -5,12 +5,12 @@
 1. In the Scala REPL, type `3.` followed by the Tab key. What methods can be applied?     
 **Answer**:
 
-       % 
+       %
        &
        *
        +
        -
-       / 
+       /
        >
        >=
        >>
@@ -26,11 +26,11 @@
        toLong
        toShort
        toString
-       unary_+   
-       unary_-    
-       unary_~  
-       | 
-       
+       unary_+
+       unary_-
+       unary_~
+       |
+
 
 2. In the Scala REPL, compute the square root of 3, and then square that value. By how much does the result differ from 3? (Hint: The `res` variables are your friend.)     
 **Answer**:
