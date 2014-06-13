@@ -2,7 +2,7 @@
 
 ###Exercises
 
-1. In the Scala REPL, type `3`. followed by the Tab key. What methods can be applied?
+1. In the Scala REPL, type `3.` followed by the Tab key. What methods can be applied?
 2. In the Scala REPL, compute the square root of 3, and then square that value. By how much does the result differ from 3? (Hint: The `res` variables are your friend.)
 3. Are the `res` variables `val` or `var`?
 4. Scala lets you multiply a string with a number—try out `"crazy" * 3` in the REPL. What does this operation do? Where can you find it in Scaladoc?
