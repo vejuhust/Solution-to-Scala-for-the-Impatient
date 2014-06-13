@@ -68,10 +68,13 @@ It repeats the string for given times. e.g.
     scala> "crazy" * 3
     res1: String = crazycrazycrazy
     
-Found `def *(n: Int): String` on [StringLike](http://www.scala-lang.org/api/current/#scala.collection.immutable.StringLike)
+Found `def *(n: Int): String` on [StringOps](http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.StringOps)
 
 
-5) What does `10 max 2` mean? In which class is the max method defined?
+5) What does `10 max 2` mean? In which class is the max method defined?     
+**Answer**:      
+`10 max 2` means `10.max(2)`. It's defined in object *math* of *scala.math* package.     
+
 
 6) Using `BigInt`, compute 2^1024.
 
