@@ -76,13 +76,46 @@ Found `def *(n: Int): String` on [StringOps](http://www.scala-lang.org/api/curre
 `10 max 2` means `10.max(2)`. It's defined in object *math* of *scala.math* package.     
 
 
-6) Using `BigInt`, compute 2^1024.
+6) Using `BigInt`, compute 2^1024.     
+**Answer**:     
 
-7) What do you need to import so that you can get a random prime as `probablePrime(100, Random)`, without any qualifiers before `probablePrime` and `Random`?
+    import scala.math._
+    BigInt(2).pow(1024)
 
-8) One way to create random file or directory names is to produce a random `BigInt` and convert it to base 36, yielding a string such as `"qsnvbevtomcj38o06kul"`. Poke around Scaladoc to find a way of doing this in Scala.
 
-9) How do you get the first character of a string in Scala? The last character?
+7) What do you need to import so that you can get a random prime as `probablePrime(100, Random)`, without any qualifiers before `probablePrime` and `Random`?     
+**Answer**:     
+    
+    import scala.math.BigInt._
+    import scala.util._
+    probablePrime(100, Random)
 
-10) What do the `take`, `drop`, `takeRight`, and `dropRight` string functions do? What advantage or disadvantage do they have over using `substring`?
+
+8) One way to create random file or directory names is to produce a random `BigInt` and convert it to base 36, yielding a string such as `"qsnvbevtomcj38o06kul"`. Poke around Scaladoc to find a way of doing this in Scala.     
+**Answer**:     
+
+    import scala.math.BigInt._
+    import scala.util._
+    probablePrime(1024, Random).toString(36)
+
+
+9) How do you get the first character of a string in Scala? The last character?     
+**Answer**:      
+Use `.head` to get the first, and `.last` to get the last.
+
+
+
+10) What do the `take`, `drop`, `takeRight`, and `dropRight` string functions do? What advantage or disadvantage do they have over using `substring`?     
+**Answer**:     
+
+* `take` : Selects first *n* elements.      
+* `drop` : Selects all elements except first *n* ones.     
+* `takeRight` : Selects last *n* elements.     
+* `dropRight` : Selects all elements except last *n* ones.     
+
+
+
+
+
+
 
