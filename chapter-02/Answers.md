@@ -36,3 +36,11 @@ The value of `{}` is `()`, type is `Unit`.
     }
     
 
+6) **Answer**:      
+
+    var acc = 1L
+    val word = "Hello"
+    for (c <- word)
+        acc *= c.toInt
+    println(acc)
+    
