@@ -44,3 +44,11 @@ The value of `{}` is `()`, type is `Unit`.
         acc *= c.toInt
     println(acc)
     
+
+7) **Answer**:      
+
+    val word = "Hello"
+    val acc = (1L /: word)(_ * _)
+    println(acc)
+    
+
