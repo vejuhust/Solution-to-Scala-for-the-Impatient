@@ -50,10 +50,18 @@ The value of `{}` is `()`, type is `Unit`.
     val word = "Hello"
     val acc = (1L /: word)(_ * _.toInt)
     println(acc)
-    
+
 
 8) **Answer**:      
 
     def product(s: String): Long = (1L /: s)(_ * _.toInt)
+
+
+9) **Answer**:      
+
+    def product(s: String): Long = 
+        if (s.isEmpty) 1L
+        else s.head.toInt * product(s.tail)
+    
 
 
