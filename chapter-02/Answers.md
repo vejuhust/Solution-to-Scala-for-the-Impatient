@@ -62,6 +62,13 @@ The value of `{}` is `()`, type is `Unit`.
     def product(s: String): Long = 
         if (s.isEmpty) 1L
         else s.head.toInt * product(s.tail)
-    
 
+  
+10) **Answer**:      
+
+      def Power(x: Double, n: Int): Double =
+        if (n == 0) 1
+        else if (n < 0) 1 / Power(x, -n)
+        else if (n % 2 == 0) Power(x, n / 2) * Power(x, n / 2)
+        else x * Power(x, n - 1)  
 
